@@ -1,0 +1,37 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+    font-weight: 900;
+    font-size: 30px;
+    color: #709775;
+}
+.hero {
+    background-color: #709775;
+}
+.bg {
+    background-image: url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover; 
+    background-position: center center;
+}
+.bg .container {
+    height: 90vh; 
+}
+.contact {
+    background-color: #709775d9;
+    box-shadow: 5px 5px 10px #252525bd;
+    border-radius: 8px;
+}
+.blog-bg {
+    background-color: #709775;
+    color: #fff;
+}
+.nav-link {
+    color: #709775;
+    font-weight: bold;
+}
+#caravan .card:hover {
+    transform: rotateZ(-1deg) scale(1.01);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

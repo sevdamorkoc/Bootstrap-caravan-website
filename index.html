@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Portfolio Website</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav id="scrollspy" class="navbar sticky-top bg-light py-2 px-3">
+        <a class="navbar-brand" href="#">Caravan's</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#feature">Feature</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#caravan">Caravan Types</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" tabindex="0">
+
+        <!-- hero -->
+        <div class="hero">
+            <div id="home" class="container col-xxl-8 px-4 pt-5">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1597257095947-c15b23285ed1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mt-3 mb-3">Responsive left-aligned hero with image</h1>
+                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-success px-4 me-md-2">Caravan Types</button>
+                            <button type="button" class="btn btn-outline-light px-4">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,58.7C672,32,768,32,864,64C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- featurette -->
+        <div class="container px-4 mb-5" id="feature">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#709775"
+                            class="bi bi-universal-access" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9V5.5Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="btn btn-success">
+                            Primary button
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#709775" class="bi bi-umbrella-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 0a.5.5 0 0 1 .5.5v.514C12.625 1.238 16 4.22 16 8c0 0 0 .5-.5.5-.149 0-.352-.145-.352-.145l-.004-.004-.025-.023a3.484 3.484 0 0 0-.555-.394A3.166 3.166 0 0 0 13 7.5c-.638 0-1.178.213-1.564.434a3.484 3.484 0 0 0-.555.394l-.025.023-.003.003s-.204.146-.353.146-.352-.145-.352-.145l-.004-.004-.025-.023a3.484 3.484 0 0 0-.555-.394 3.3 3.3 0 0 0-1.064-.39V13.5H8h.5v.039l-.005.083a2.958 2.958 0 0 1-.298 1.102 2.257 2.257 0 0 1-.763.88C7.06 15.851 6.587 16 6 16s-1.061-.148-1.434-.396a2.255 2.255 0 0 1-.763-.88 2.958 2.958 0 0 1-.302-1.185v-.025l-.001-.009v-.003s0-.002.5-.002h-.5V13a.5.5 0 0 1 1 0v.506l.003.044a1.958 1.958 0 0 0 .195.726c.095.191.23.367.423.495.19.127.466.229.879.229s.689-.102.879-.229c.193-.128.328-.304.424-.495a1.958 1.958 0 0 0 .197-.77V7.544a3.3 3.3 0 0 0-1.064.39 3.482 3.482 0 0 0-.58.417l-.004.004S5.65 8.5 5.5 8.5c-.149 0-.352-.145-.352-.145l-.004-.004a3.482 3.482 0 0 0-.58-.417A3.166 3.166 0 0 0 3 7.5c-.638 0-1.177.213-1.564.434a3.482 3.482 0 0 0-.58.417l-.004.004S.65 8.5.5 8.5C0 8.5 0 8 0 8c0-3.78 3.375-6.762 7.5-6.986V.5A.5.5 0 0 1 8 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="btn btn-success">
+                            Primary button
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#709775"
+                            class="bi bi-signpost-2-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.293.707A1 1 0 0 0 7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586A1 1 0 0 0 7.293.707z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        <a href="#" class="btn btn-success">
+                            Primary button
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#709775" fill-opacity="1"
+                d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,58.7C672,32,768,32,864,64C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+        <!-- blog -->
+        <div class="blog-bg">
+            <div id="blog" class="container py-5">
+                <h1 class="text-center">Caravan's Blog</h1>
+                <hr>
+                <div class="row mt-5 mb-5">
+                    <div class="col-lg-7 g-5">
+                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll
+                                blow your mind.</span></h2>
+                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="https://images.unsplash.com/photo-1662572314679-32bdaf079b79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            width="400" alt="">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-5 mt-5">
+                    <div class="col-lg-7 order-md-2 g-5">
+                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. 
+                            <span class="text-muted">See for yourself.</span></h2>
+                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                    </div>
+                    <div class="col-lg-5 order-md-1">
+                        <img src="https://images.unsplash.com/photo-1532115298834-4c70d11ec8f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            width="400" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-5 mt-5">
+                    <div class="col-lg-7 g-5">
+                        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                                class="text-muted">Checkmate.</span></h2>
+                        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="https://images.unsplash.com/photo-1518727009842-83f936fd395b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                            width="400" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- album -->
+        <div id="caravan">            
+            <div class="container py-5 my-5">
+                <h1 class="text-center mb-4">Caravan Types</h1>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1597131527856-13cdb8dc050e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1209&q=80"
+                                alt="">
+
+                            <div class="card-body">
+                                <h3>Tent Trailer</h3>
+                                <p class="card-text pb-5 pt-3">A pop-up camper is a type of towed recreational vehicle that can be collapsed for easy storage and transport. When set up, this type of trailer.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1563783850023-077d97825802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                alt="">
+
+                            <div class="card-body">
+                                <h3>Camper Trailers</h3>
+                                <p class="card-text pb-5 pt-3">A caravan, travel trailer, camper, tourer or camper trailer is a trailer towed behind a road vehicle to provide a place to sleep which is more comfortable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1592351763700-b9b35a6465ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                alt="">
+
+                            <div class="card-body">
+                                <h3>Fifth-Wheelers</h3>
+                                <p class="card-text pb-5 pt-3">The fifth-wheel coupling provides the link between a semi-trailer and the towing truck, tractor unit, leading trailer or dolly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="bg" id="contact">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="contact p-5">
+                            <h1>Cover your page.</h1>
+                            <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit
+                                the text, and add your own fullscreen background photo to make it your own.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+                <p class="fw-bold fst-italic">&copy; 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="https://github.com/reactninjas-fs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#709775"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a></li>
+                    <li class="ms-3"><a class="fw-bold fst-italic" href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
